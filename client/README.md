@@ -1,8 +1,8 @@
 # 🌤️ Weather Now
 
-Weather Now is a MERN stack weather application that displays current weather and forecast information for any city.
+Weather Now is a MERN stack weather application.
 
-## 🚀 Technologies Used
+## Technologies Used
 
 - MongoDB
 - Express.js
@@ -10,52 +10,31 @@ Weather Now is a MERN stack weather application that displays current weather an
 - Node.js
 - OpenWeather API
 
-## ✨ Features
+## Features
 
 - Search weather by city
-- Current temperature
+- Current weather
+- Temperature
 - Feels like temperature
 - Humidity
 - Wind speed
 - Rain information
-- Atmospheric pressure
+- Pressure
 - Hourly forecast
 - 5-day forecast
-- Celsius / Fahrenheit
+- °C / °F
 - km/h / mph
 - mm / inches
 - Recent search history
 - Responsive design
-- Loading and error messages
 
-## 🏗️ Architecture
+## Architecture
 
-User → React Frontend → Express + Node.js Backend → OpenWeather API
+User → React → Express + Node.js → OpenWeather API
 
 MongoDB is used to store recent search history.
 
-## 📁 Project Structure
+## Developer
 
-```text
-WEATHERNOW PROJECT
-│
-├── client
-│   └── src
-│       ├── components
-│       ├── services
-│       ├── App.jsx
-│       ├── App.css
-│       └── main.jsx
-│
-├── server
-│   ├── config
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── services
-│   ├── .env
-│   ├── .env.example
-│   ├── .gitignore
-│   └── server.js
-│
-└── README.md
+J. Reshmi  
+B.Sc Computer Science – III Year

@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 
 import Header from "./components/Header";
@@ -25,6 +26,8 @@ function App() {
   const [unit, setUnit] = useState("C");
   const [windUnit, setWindUnit] = useState("km/h");
   const [rainUnit, setRainUnit] = useState("mm");
+
+  const [theme, setTheme] = useState("light");
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -54,11 +57,22 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className={`app ${theme}`}>
 
       <Header />
 
       <main className="container">
+
+        {/* Dark / Light Mode */}
+        <div className="theme-toggle">
+          <button
+            onClick={() =>
+              setTheme(theme === "light" ? "dark" : "light")
+            }
+          >
+            {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+          </button>
+        </div>
 
         <SearchBar
           onSearch={searchWeather}
